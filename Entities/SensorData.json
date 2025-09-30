@@ -1,0 +1,41 @@
+{
+    "name": "SensorData",
+    "type": "object",
+    "properties": {
+      "asset_id": {
+        "type": "string",
+        "description": "Reference to Asset"
+      },
+      "timestamp": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "power_output": {
+        "type": "number",
+        "description": "Power output in kW"
+      },
+      "voltage": {
+        "type": "number"
+      },
+      "current": {
+        "type": "number"
+      },
+      "temperature": {
+        "type": "number"
+      },
+      "weather_condition": {
+        "type": "string"
+      },
+      "wind_speed": {
+        "type": "number"
+      },
+      "solar_irradiance": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "asset_id",
+      "timestamp",
+      "power_output"
+    ]
+  }

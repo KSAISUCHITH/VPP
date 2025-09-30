@@ -1,0 +1,61 @@
+{
+    "name": "Asset",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Asset name"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "solar",
+          "wind",
+          "battery",
+          "grid",
+          "load"
+        ],
+        "description": "Type of energy asset"
+      },
+      "capacity": {
+        "type": "number",
+        "description": "Maximum capacity in kW"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          },
+          "building": {
+            "type": "string"
+          }
+        }
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "online",
+          "offline",
+          "maintenance"
+        ],
+        "default": "online"
+      },
+      "current_output": {
+        "type": "number",
+        "description": "Current output in kW"
+      },
+      "efficiency": {
+        "type": "number",
+        "description": "Efficiency percentage"
+      }
+    },
+    "required": [
+      "name",
+      "type",
+      "capacity"
+    ]
+  }

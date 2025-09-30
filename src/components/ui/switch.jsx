@@ -1,0 +1,19 @@
+import React from 'react'
+
+export function Switch({ checked, onChange, onCheckedChange, className = '' }) {
+  const handle = (e) => {
+    const v = e.target.checked
+    onChange?.(v)
+    onCheckedChange?.(v)
+  }
+  return (
+    <label className={`inline-flex items-center cursor-pointer ${className}`}>
+      <input type="checkbox" className="sr-only" checked={checked} onChange={handle} />
+      <span className={`w-10 h-5 flex items-center bg-slate-300 rounded-full p-1 transition ${checked ? 'bg-emerald-500' : ''}`}>
+        <span className={`bg-white w-4 h-4 rounded-full shadow transform transition ${checked ? 'translate-x-5' : ''}`}></span>
+      </span>
+    </label>
+  )
+}
+
+

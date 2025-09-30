@@ -1,0 +1,51 @@
+{
+    "name": "Alert",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": [
+          "critical",
+          "warning",
+          "info",
+          "recommendation"
+        ]
+      },
+      "title": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string"
+      },
+      "asset_id": {
+        "type": "string"
+      },
+      "priority": {
+        "type": "string",
+        "enum": [
+          "high",
+          "medium",
+          "low"
+        ],
+        "default": "medium"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "acknowledged",
+          "resolved"
+        ],
+        "default": "active"
+      },
+      "action_required": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "required": [
+      "type",
+      "title",
+      "message"
+    ]
+  }

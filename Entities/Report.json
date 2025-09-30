@@ -1,0 +1,56 @@
+{
+    "name": "Report",
+    "type": "object",
+    "properties": {
+      "report_type": {
+        "type": "string",
+        "enum": [
+          "daily",
+          "weekly",
+          "monthly",
+          "custom"
+        ]
+      },
+      "start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "end_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "total_generation": {
+        "type": "number",
+        "description": "Total renewable generation in kWh"
+      },
+      "total_consumption": {
+        "type": "number",
+        "description": "Total campus consumption in kWh"
+      },
+      "grid_import": {
+        "type": "number",
+        "description": "Total grid import in kWh"
+      },
+      "grid_export": {
+        "type": "number",
+        "description": "Total grid export in kWh"
+      },
+      "cost_savings": {
+        "type": "number",
+        "description": "Cost savings in currency"
+      },
+      "carbon_savings": {
+        "type": "number",
+        "description": "Carbon savings in kg CO2"
+      },
+      "renewable_percentage": {
+        "type": "number",
+        "description": "Percentage of renewable energy used"
+      }
+    },
+    "required": [
+      "report_type",
+      "start_date",
+      "end_date"
+    ]
+  }

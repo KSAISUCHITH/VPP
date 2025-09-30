@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Minimal reset and utility classes used in Layout and pages */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; }
+.min-h-screen { min-height: 100vh; }
+.flex { display: flex; }
+.flex-1 { flex: 1 1 0%; }
+.w-full { width: 100%; }
+.hidden { display: none; }
+.md\:block { display: block; }
+.rounded-xl { border-radius: 0.75rem; }
+.border { border: 1px solid #e5e7eb; }
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.text-lg { font-size: 1.125rem; }
+.font-semibold { font-weight: 600; }
+.bg-white { background: white; }
+.bg-white\/80 { background: rgba(255,255,255,0.8); }
+.backdrop-blur-sm { backdrop-filter: blur(4px); }
+.rounded-lg { border-radius: 0.5rem; }
+.border-slate-200 { border-color: #e2e8f0; }
+.text-slate-700 { color: #334155; }
+.text-slate-900 { color: #0f172a; }
+.grid { display: grid; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+
+

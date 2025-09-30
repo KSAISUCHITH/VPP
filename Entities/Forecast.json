@@ -1,0 +1,65 @@
+{
+    "name": "Forecast",
+    "type": "object",
+    "properties": {
+      "forecast_time": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "horizon_hours": {
+        "type": "number",
+        "description": "Forecast horizon in hours"
+      },
+      "predicted_generation": {
+        "type": "number",
+        "description": "Predicted total generation in kW"
+      },
+      "predicted_demand": {
+        "type": "number",
+        "description": "Predicted campus demand in kW"
+      },
+      "weather_forecast": {
+        "type": "object",
+        "properties": {
+          "temperature": {
+            "type": "number"
+          },
+          "wind_speed": {
+            "type": "number"
+          },
+          "cloud_cover": {
+            "type": "number"
+          },
+          "solar_irradiance": {
+            "type": "number"
+          }
+        }
+      },
+      "recommendations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "string"
+            },
+            "asset": {
+              "type": "string"
+            },
+            "priority": {
+              "type": "string"
+            },
+            "savings_estimate": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "required": [
+      "forecast_time",
+      "horizon_hours",
+      "predicted_generation",
+      "predicted_demand"
+    ]
+  }
