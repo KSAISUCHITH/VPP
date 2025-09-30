@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vpp-frontend
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    branch: main
+    repo: https://github.com/KSAISUCHITH/VPP.git
+    rootDir: .
+    autoDeploy: true
