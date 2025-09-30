@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/dashboard/AlertPanel.jsx'
+export { default } from '../../../components/dashboard/AlertPanel.jsx'
 
 

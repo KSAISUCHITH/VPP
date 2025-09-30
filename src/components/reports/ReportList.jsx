@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/reports/ReportList.jsx'
+export { default } from '../../../components/reports/ReportList.jsx'
 
 

@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/dashboard/MetricCard.jsx'
+export { default } from '../../../components/dashboard/MetricCard.jsx'
 
 

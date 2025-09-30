@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/simulator/SimulatorResults.jsx'
+export { default } from '../../../components/simulator/SimulatorResults.jsx'
 
 

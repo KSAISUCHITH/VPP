@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/dashboard/RecommendationEngine.jsx'
+export { default } from '../../../components/dashboard/RecommendationEngine.jsx'
 
 

@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/digitaltwin/CampusMap.jsx'
+export { default } from '../../../components/digitaltwin/CampusMap.jsx'
 
 

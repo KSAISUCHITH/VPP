@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/dashboard/EnergyFlowChart.jsx'
+export { default } from '../../../components/dashboard/EnergyFlowChart.jsx'
 
 

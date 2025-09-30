@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/simulator/ScenarioBuilder.jsx'
+export { default } from '../../../components/simulator/ScenarioBuilder.jsx'
 
 

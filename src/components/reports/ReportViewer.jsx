@@ -1,3 +1,3 @@
-export { default } from '../../../Componenets/reports/ReportViewer.jsx'
+export { default } from '../../../components/reports/ReportViewer.jsx'
 
 
